@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+
+package news;
+service NewsService {
+  rpc hello(StringRequest) returns (StringResponse) {}
+}
+
+message StringRequest {
+  string name = 1;
+}
+
+message StringResponse {
+  string result = 1;
+}
